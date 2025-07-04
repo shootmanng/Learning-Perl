@@ -9,9 +9,11 @@ while (<FH>) {
 
     chomp;
 
-    if (/[A-Z][^A-Z\h]/) {
-        
-        say $_;
+    if (/[fF]red/) {
+        if (/[wW]ilma/) {
+            
+            say $_;
+        }
     }
 }
 
