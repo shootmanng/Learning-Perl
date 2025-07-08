@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+## Copyright (C) 2025 Yours Truly
+
+use v5.4;
+use feature qw<say>;
+
+$^I = ".out";
+my $shebang = "#!/usr/bin/perl";
+
+while (<>) {
+    s/^$shebang/$shebang\n## Copyright (C) 2025 Yours Truly/;
+    print;
+}

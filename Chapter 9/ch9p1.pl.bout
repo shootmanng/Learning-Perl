@@ -1,0 +1,19 @@
+#!/usr/bin/perl
+## Copyright (C) 2025 Yours Truly
+
+use v5.4;
+use feature qw<say>;
+
+$what = "fred|barney";
+
+open FH, "<", "./Chapter 9/fred_test_newer.txt";
+
+while(<FH>) {
+
+    if (/($what){3}/) {
+        say $_;
+    }
+
+}
+
+close FH;

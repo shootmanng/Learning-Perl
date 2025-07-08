@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+
+use v5.4;
+use feature qw<say>;
+
+$^I = ".out";
+
+while(<>) {
+
+    s/fred/Larry/ig;
+    print;
+}
